@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* Versão para telas maiores */
+
+@media screen and (min-width: 600px) {
+
+    .corpo {
+        background-image: url(../image/BR-en-20240311-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+        background-position: center center;
+        background-size: cover;
+        text-align: center;
+    }
+
+    main, nav {
+        background-color: rgba(0, 0, 0, 0.300);
+    }
+
+    .formulario {
+        background-color: rgba(0, 0, 0, 0.750);
+        padding: 62px;
+
+        height: 722px;
+        max-height: 722px;
+        width: 450px;
+        max-width: 450px;
+        border-radius: 5px;
+    }
+
+    .email {
+        background-color: #1b1b1bcc;
+    }
+
+    .senha {
+        background-color: #1b1b1bcc;
+    }
+
+    .ou {
+        font-size: 16px;
+        color: #ABB8B0;
+    }
+
+    .botao2 {
+        background-color: #b9b9b934;
+    }
+
+    .botao2:hover {
+        background-color: #b8b8b82d;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .footer-p {
+        background-color: rgba(0, 0, 0, 0.650);
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    
+    div.duvidas p {
+        text-align: center;
+    }
+}

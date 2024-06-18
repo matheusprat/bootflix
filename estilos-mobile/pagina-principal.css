@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh; /* Alterado de height para min-height */
+    background-color: #0f0f0f;
+    overflow-x: hidden; /* Esconde rolagem horizontal */
+}
+
+div.container {
+    padding-right: 0;
+}
+
+/* Cabeçalho do site */
+.navegador {
+    background-color: #0a0a0ab2;
+}
+
+nav.navbar.navegador.fixed-top {
+    width: 100vw;
+}
+
+.logo {
+    font-family: 'Changa One', Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: #ae2bc9;
+}
+
+.pesquisa {
+    display: block;
+    background-color: rgba(46, 46, 46, 0.4);
+    color: #5f5f5f;
+    width: auto;
+    max-width: 300px; /* Defina uma largura máxima se necessário */
+    text-align: center;
+    border: 3px solid #5f5f5f;
+    border-radius: 3px;
+}
+
+.pesquisa:hover {
+    color: white;
+}
+
+.menu {
+    background-color: transparent;
+    color: white;
+    border: 0px;
+}
+
+.perfil > img {
+    background-size: cover;
+    padding: 0;
+    height: 50px;
+}
+
+h5.perfil {
+    color: rgb(180, 180, 180);
+}
+
+/* Cabeçalho do menu */
+.offcanvas-header {
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+/* div dentro do corpo do menu */
+.offcanvas-body {
+    background-color: transparent;
+}
+
+/* Corpo do menu */
+.offcanvas.hidding, .offcanvas.show, .offcanvas.showing {
+    max-width: 270px;
+    background-color: #0a0a0a;
+}
+
+.nav-item {
+    margin-bottom: 5px;
+}
+
+.links-menu {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: #969696ea;
+}
+
+.links-menu:hover {
+    color: white;
+}
+
+/*Corpo/conteudo do site */
+
+.sliderp {
+    display: block;
+    font-size: 0;
+    margin-top: 70px;
+    margin-left: 20px;
+    position: relative;
+    color: #999999;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.sliders {
+    display: block;
+    font-size: 0;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: relative;
+    color: #999999;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Configurações das imagens do slider */
+
+.carousel-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: -10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item > img {
+    height: 50%;
+    width: 43%;
+    margin-right: 1%;
+}
+
+/* Estilo da imagem extra */
+.carousel-item .extra-image {
+    margin: auto;
+    position: absolute;
+    right: -18%;
+    top: 0;
+    height: 100%;
+    width: auto;
+    max-width: 100px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* classe para ocultar as imagens extras */
+.carousel-item.moving .extra-image {
+    opacity: 0; /* Torna a imagem invisível */
+    visibility: hidden;
+}
+
+/* rodapé do Bootflix Mobile */
+
+footer {
+    background-color: #0f0f0f;
+}
+
+div.row.row-cols-1 {
+    width: 95vw;
+}
+
+div.col {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div.col1 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+div.col2 {
+    margin-bottom: 50px;
+}
+
+.links-footer {
+    text-decoration: none;
+    color: gray;
+}
+
+.links-footer:hover {
+    color: white;
+}

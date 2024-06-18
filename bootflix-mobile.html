@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootflix</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Links CSS-->
+    <link rel="stylesheet" href="estilos-mobile/pagina-principal.css" media="all">
+    <link rel="stylesheet" href="estilos-mobile/media-query.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navegador fixed-top" aria-label="Dark offcanvas navbar">
+          <!-- Logo Bootflix -->
+            <div class="container">
+              <a class="logo" href="bootflix-mobile.html">BootFlix</a>
+                <!-- Barra de pesquisa -->
+                <div>
+                  <form role="search">
+                    <input class="pesquisa" type="search" placeholder="Buscar">
+                  </form>
+                </div>
+                <!-- Botao Hamburger -->
+                <button class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarDark">
+                <!-- Cabeçalho do menu -->
+                <div class="offcanvas-header">
+                    <!-- Perfil do menu -->
+                    <h5 class="perfil"><img src="image/perfil.png" class="img-thumbnail me-3" alt="Foto de perfil">Matheus</h5>
+                  <!-- Botão do menu (icon do bootstrap)-->
+                  <button class="menu" type="button" data-bs-toggle="offcanvas"     data-bs-target="#offcanvasNavbarDark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                  </button>
+                </div>
+                <!-- Corpo todo do menu -->
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="links-menu" href="perfil.html">Contas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Central de Ajuda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="bootflix-login.html">Sair da Netflix</a>
+                    </li>
+                    <hr style="color: white;">
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Minha lista</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Suspenses</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Para toda a familia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Filmes e séries estrangeiros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Reality shows</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">LGBTQ+ Stories</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Ação</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Comédia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Fantasia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Ficção cientifica</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Terror</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Comédia stand-up</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Filmes e séries brasileiros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Documentários</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Música e musicais</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Romance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="links-menu" href="#">Dramas</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <!-- Populares da Bootlix Slider -->
+      <div class="sliderp">
+        <h2>Populares na Bootflix</h2>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-bootflix">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/populares-na-bootflix/download.jpeg"  alt="...">
+              <img src="image/populares-na-bootflix/download (1).jpeg" alt="...">
+              <!-- Imagem spoiler para proximo conteudo -->
+              <img class="extra-image" src="image/populares-na-bootflix/download (3).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/populares-na-bootflix/download (3).jpeg" alt="...">
+              <img src="image/populares-na-bootflix/download (4).jpeg" alt="...">
+              <img class="extra-image" src="image/populares-na-bootflix/download (5).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/populares-na-bootflix/download (5).jpeg" alt="...">
+              <img src="image/populares-na-bootflix/download (6).jpeg" alt="...">
+              <img class="extra-image" src="image/populares-na-bootflix/download.jpeg" alt="Spoiler">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sliders">
+        <h2>Séries dos EUA</h2>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-bootflix">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/series-dos-eua/download.jpeg"  alt="...">
+              <img src="image/series-dos-eua/download (1).jpeg" alt="...">
+              <!-- Imagem spoiler para proximo conteudo -->
+              <img class="extra-image" src="image/series-dos-eua/download (3).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/series-dos-eua/download (3).jpeg" alt="...">
+              <img src="image/series-dos-eua/download (4).jpeg" alt="...">
+              <img class="extra-image" src="image/series-dos-eua/download (5).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/series-dos-eua/download (5).jpeg" alt="...">
+              <img src="image/series-dos-eua/download (6).jpeg" alt="...">
+              <img class="extra-image" src="image/series-dos-eua/download.jpeg" alt="Spoiler">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sliders">
+        <h2>Assistir novamente</h2>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-bootflix">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/assistir-novamente/download.jpeg"  alt="...">
+              <img src="image/assistir-novamente/download (1).jpeg" alt="...">
+              <!-- Imagem spoiler para proximo conteudo -->
+              <img class="extra-image" src="image/assistir-novamente/download (3).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/assistir-novamente/download (3).jpeg" alt="...">
+              <img src="image/assistir-novamente/download (4).jpeg" alt="...">
+              <img class="extra-image" src="image/assistir-novamente/download (5).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/assistir-novamente/download (5).jpeg" alt="...">
+              <img src="image/assistir-novamente/download (6).jpeg" alt="...">
+              <img class="extra-image" src="image/assistir-novamente/download.jpeg" alt="Spoiler">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sliders">
+        <h2>Animes de ficção científica</h2>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-bootflix">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/animes-de-ficçao-cientifica/download.jpeg"  alt="...">
+              <img src="image/animes-de-ficçao-cientifica/download (1).jpeg" alt="...">
+              <!-- Imagem spoiler para proximo conteudo -->
+              <img class="extra-image" src="image/animes-de-ficçao-cientifica/download (3).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/animes-de-ficçao-cientifica/download (3).jpeg" alt="...">
+              <img src="image/animes-de-ficçao-cientifica/download (4).jpeg" alt="...">
+              <img class="extra-image" src="image/animes-de-ficçao-cientifica/download (5).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/animes-de-ficçao-cientifica/download (5).jpeg" alt="...">
+              <img src="image/animes-de-ficçao-cientifica/download (6).jpeg" alt="...">
+              <img class="extra-image" src="image/animes-de-ficçao-cientifica/download (1).jpeg" alt="Spoiler">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sliders">
+        <h2>Favoritos conhecidos</h2>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-bootflix">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/favoritos-conhecidos/download.jpeg"  alt="...">
+              <img src="image/favoritos-conhecidos/download (1).jpeg" alt="...">
+              <!-- Imagem spoiler para proximo conteudo -->
+              <img class="extra-image" src="image/favoritos-conhecidos/download (2).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/favoritos-conhecidos/download (2).jpeg" alt="...">
+              <img src="image/favoritos-conhecidos/download (3).jpeg" alt="...">
+              <img class="extra-image" src="image/favoritos-conhecidos/download (4).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/favoritos-conhecidos/download (4).jpeg" alt="...">
+              <img src="image/favoritos-conhecidos/download (5).jpeg" alt="...">
+              <img class="extra-image" src="image/favoritos-conhecidos/download.jpeg" alt="Spoiler">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sliders">
+        <h2>Em alta</h2>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-bootflix">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/em-alta/download.jpeg"  alt="...">
+              <img src="image/em-alta/download (1).jpeg" alt="...">
+              <!-- Imagem spoiler para proximo conteudo -->
+              <img class="extra-image" src="image/em-alta/download (2).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/em-alta/download (2).jpeg" alt="...">
+              <img src="image/em-alta/download (3).jpeg" alt="...">
+              <img class="extra-image" src="image/em-alta/download (4).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/em-alta/download (4).jpeg" alt="...">
+              <img src="image/em-alta/download (5).jpeg" alt="...">
+              <img class="extra-image" src="image/em-alta/download.jpeg" alt="Spoiler">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sliders">
+        <h2>Animação</h2>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-bootflix">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/animacao/download.jpeg"  alt="...">
+              <img src="image/animacao/download (1).jpeg" alt="...">
+              <!-- Imagem spoiler para proximo conteudo -->
+              <img class="extra-image" src="image/animacao/download (2).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/animacao/download (2).jpeg" alt="...">
+              <img src="image/animacao/download (3).jpeg" alt="...">
+              <img class="extra-image" src="image/animacao/download (4).jpeg" alt="Spoiler">
+            </div>
+            <div class="carousel-item">
+              <img src="image/animacao/download (4).jpeg" alt="...">
+              <img src="image/animacao/download (5).jpeg" alt="...">
+              <img class="extra-image" src="image/animacao/download.jpeg" alt="Spoiler">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row row-cols-1">
+          <div class="col col1"><a href="#" class="links-footer">Termos de Uso</a></div>
+          <div class="col"><a href="#" class="links-footer">Central de ajudas</a></div>
+          <div class="col"><a href="#" class="links-footer">Preferências de cookies</a></div>
+          <div class="col col2"><a href="#" class="links-footer">Declaração de Privacidade</a></div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Script da rolagem da Bootflix no slider -->
+    <!-- Script da rolagem da Bootflix no slider -->
+    <!-- Script da rolagem da Bootflix no slider -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var carousels = document.querySelectorAll('.carousel-bootflix');
+
+        carousels.forEach(function(carousel) {
+          var carouselInstance = new bootstrap.Carousel(carousel);
+
+          carousel.addEventListener('slide.bs.carousel', function(event) {
+            var activeIndex = event.from;
+            var nextIndex = event.to;
+            var carouselItems = carousel.querySelectorAll('.carousel-item');
+
+            carouselItems.forEach(function(item, index) {
+              var extraImage = item.querySelector('.extra-image');
+
+              if (index === nextIndex) {
+                extraImage.style.display = 'block'; // Mostrar a imagem extra do próximo slide
+              } else {
+                extraImage.style.display = 'none'; // Esconder a imagem extra dos outros slides
+              }
+            });
+          });
+        });
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,1087 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio-Bootflix</title>
+    <!-- Links CSS-->
+     <link rel="stylesheet" href="animation-desktop/style.css">
+    <link rel="stylesheet" href="estilos-desktop/style.css" media="all">
+    <link rel="stylesheet" href="estilos-desktop/media-query.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header class="container-fluid position-fixed d-flex align-items-center justify-content-between mt-2 mt-lg-4 ms-lg-4">
+      <div class="navbar-scroll"></div>
+      <!-- LOGO E NAVEGAR -->
+      <div class="d-flex position-relative align-items-center">
+        <a href="#" class="logo text-decoration-none">BOOTFLIX</a>
+        <ul class="d-flex nav-bar text-light p-0 ms-4 m-0 mb-1">
+          <li class="d-md-none cursor btn-nav mt-1">Navegar
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+            <ul class="nav-list roll-left roll-right text-center p-0 m-0 position-fixed">
+              <li class="fw-bold text-light">Início</li>
+              <li>Séries</li>
+              <li>Filmes</li>
+              <li>Bombando</li>
+              <li>Minha lista</li>
+              <li>Navegar por idiomas</li>
+            </ul>
+          </li>
+          <li class="me-2 cursor d-none d-md-block menu mt-lg-2 me-lg-3 mt-1">Início</li>
+          <li class="me-2 cursor d-none d-md-block menu mt-lg-2 me-lg-3 mt-1">Séries</li>
+          <li class="me-2 cursor d-none d-md-block menu mt-lg-2 me-lg-3 mt-1">Filmes</li>
+          <li class="me-2 cursor d-none d-md-block menu mt-lg-2 me-lg-3 mt-1">Bombando</li>
+          <li class="me-2 cursor d-none d-md-block menu mt-lg-2 me-lg-3 mt-1">Minha lista</li>
+          <li class="me-2 cursor d-none d-md-block menu mt-lg-2 me-lg-3 mt-1">Navegar por idiomas</li>
+        </ul>
+      </div>
+      <!-- SEARCH NOTIFICAÇÃO E PERFIL -->
+       <!-- PESQUISA / SEARCH -->
+      <div class="d-flex position-relative">
+        <div class="icon-search cursor">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search text-light" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        </div>
+        <div class="bar-search">
+          <input type="search" class="bar" placeholder="Títulos, gente e gêneros">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search icon-bar" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        </div>
+      </div>
+      <!-- NOTIFICAÇÃO / NOTIFICATION -->
+      <div class="btn-noti">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bell text-light cursor" viewBox="0 0 16 16">
+        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+        </svg>
+      </div>
+      <div class="position-relative notification">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill text-light arrow-noti" viewBox="0 0 16 16">
+        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+        </svg>
+        <div class="noti-list">
+          <div class="row-noti cursor">
+            <div class="row">
+              <div class="col-4">
+                <img src="image/lista-notificacao/download (1).jpeg" alt="">
+              </div>
+              <div class="col-8">
+                <h2>Assista enquanto é tempo <br> Última chance de assistir</h2>
+                <p>Há 1 semana</p>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0">
+          <div class="row-noti cursor">
+            <div class="row">
+              <div class="col-4">
+                <img src="image/lista-notificacao/download (3).jpeg" alt="">
+              </div>
+              <div class="col-8">
+                <h2>Novidade <br> CODE 8 RENEGADOS</h2>
+                <p>Há 1 semana</p>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0">
+          <div class="row-noti cursor">
+            <div class="row">
+              <div class="col-4">
+                <img src="image/lista-notificacao/download (2).jpeg" alt="">
+              </div>
+              <div class="col-8">
+                <h2>Assista agora <br> Temporada 3</h2>
+                <p>Há 1 semana</p>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0">
+          <div class="row-noti cursor">
+            <div class="row">
+              <div class="col-4">
+                <img src="image/lista-notificacao/download (4).jpeg" alt="">
+              </div>
+              <div class="col-8">
+                <h2>Novidade <br> Made in Abyss</h2>
+                <p>Há 2 semana</p>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0">
+          <div class="row-noti cursor">
+            <div class="row">
+              <div class="col-4">
+                <img src="image/lista-notificacao/download.jpeg" alt="">
+              </div>
+              <div class="col-8">
+                <h2>Continue assistindo <br> My Isekai Life</h2>
+                <p>Há 3 semana</p>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0">
+          <div class="row-noti cursor">
+            <div class="row">
+              <div class="col-4">
+                <img src="image/lista-notificacao/image-final.jpg" alt="">
+              </div>
+              <div class="col-8">
+                <h2>Novidade <br> Parasyte The Grey</h2>
+                <p>Há 3 semana</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======== PERFIL ======== -->
+       <div class="position-relative perfil">
+        <div class="btn-perfil cursor">
+          <img src="image/perfil2.png" alt="Imagem do perfil">
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-caret-up-fill text-light d-none d-lg-block perfil-arrow2" viewBox="0 0 16 16">
+        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+      </svg>
+        <div class="perfil-div">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill text-light perfil-arrow" viewBox="0 0 16 16">
+          <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+          </svg>
+          <div class="perfil-list">
+            <!-- PERFIL DA LISTA -->
+            <ul>
+              <li class="perfil mt-3 ms-3 d-flex align-items-center">
+                <a href="perfil.html" class="text-light">
+                  <img class="me-2" src="image/perfil2.png" alt="Imagem do perfil">Ernani
+                </a>
+              </li>
+            </ul>
+            <hr>
+            <!-- LISTA -->
+            <ul class="perfil-links">
+              <li>
+                <a class="ms-3" href="#">Infantil</a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                  <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                  </svg>
+                  Gerenciar perfis
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                  </svg>
+                  Transferir perfil
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                  </svg>
+                  Conta
+                </a>
+              </li>
+              <li class="mb-0">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                  <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                  </svg>
+                  Central de ajuda
+                </a>
+              </li>
+            </ul>
+            <hr>
+            <ul class="exit">
+              <li>
+                <a href="bootflix-login.html">Sair da Bootflix</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       </div>
+    </header>
+    <main>
+      <!-- IMG TOP MAIN -->
+      <div class="d-flex img-top justify-content-center align-items-center">
+        <!-- LADO ESQUERDO DA IMG TOP -->
+        <div class="div1-top">
+          <!-- IMG LOGO DO FILME DA IMG TOP -->
+          <img src="image/img-sliders/banner-top/img-logov.png" alt="GOLDEN KAMUY">
+          <!-- TOP 10 DESCRIÇÃO -->
+          <div class="mt-2 d-flex cursor-context mt-lg-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="2vw" fill="currentColor" class="bi bi-award-fill me-1" viewBox="0 0 16 16">
+            <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
+            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+            </svg>
+            <p class="m-0 d-flex align-items-center">Top 6 em filmes hoje</p>
+          </div>
+          <!-- DESCRIÇÃO SOBRE O FILME -->
+          <p class="synopsis cursor-context mt-lg-3">
+            Ele é um veterano "imortal" que deseja ficar rico rápido. Ela é <br> uma garota Ainu que conhece o território. Será que eles <br> conseguirão sobreviver e encontrar o tesouro perdido?
+          </p>
+          <!-- BOTÕES FINAIS -->
+           <div class="d-flex mt-lg-3">
+            <button class="play me-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="4vw" height="4vw" fill="currentColor" class="bi bi-play-fill text-black icon-play" viewBox="0 0 16 16">
+              <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+              </svg>
+              Assistir
+            </button>
+            <button class="button-info-top">
+              <svg xmlns="http://www.w3.org/2000/svg" width="3vw" height="3vw" fill="currentColor" class="bi bi-info-circle text-light me-1 icon-info" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+              </svg>
+              Mais informações
+            </button>
+            <!-- DIV DA INFORMAÇÃO AO CLICAR NO BOTÃO INFO -->
+            <div class="fundo-ofuscado">
+              <div class="campo-central">
+                <!-- CORPO DE TUDO -->
+                <div class="div-info">
+                  <div class="amostra d-flex">
+                    <!-- LADO ESQUERDO DA IMG BUTTONS E A LOGO -->
+                    <div class="buttons-logo">
+                      <img src="image/img-sliders/banner-top/img-logov.png" alt="Logo do filme">
+                      <div class="mt-4 d-flex">
+                        <!-- BOTAO DE PLAY -->
+                        <button class="play-info me-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill text-black icon-play" style="height: 25px;" viewBox="0 0 16 16">
+                          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                          </svg>
+                          Assistir
+                        </button>
+                        <!-- BOTAO DE ADICIONAR -->
+                        <div class="adicionar me-3 cursor">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2-plus" viewBox="0 0 16 16">
+                          <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"/>
+                          <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/>
+                          <path d="M8.5 6.5a.5.5 0 0 0-1 0V8H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V9H10a.5.5 0 0 0 0-1H8.5z"/>
+                          </svg>
+                        </div>
+                        <!-- BOTAO PARA DAR LIKE -->
+                        <div class="cursor">
+                          <button class="like" onclick="toggleIconLike()">
+                            <div class="icon-like" id="icon-like"></div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- LADO DIREITO DA IMG  BTN CLOSE + VOLUM -->
+                    <div class="volum-close d-flex">
+                      <div class="volum">
+                        <button onclick="toggleIcon()">
+                          <div class="icon-info" id="icon"></div>
+                        </button>
+                      </div>
+                      <div class="div-close">
+                        <button class="me-3 mt-3 close">
+                          <span>X</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- DIV SOBRE A INFORMAÇÃO FINAL -->
+                  <div class="info d-flex">
+                    <div class="info1 mt-5 me-3">
+                      <div class="cursor-context">
+                        <span class="ms-2">2024 2h 9min</span>
+                        <span class="hd">HD</span>
+                        <div class="maturity-desc">
+                          <img src="image/img-sliders/banner-top/number-16.png" alt="maturity">
+                          violência
+                        </div>
+                      </div>
+                      <div class="synopsis-info mt-4 cursor-context">
+                        Ele é um veterano "imortal" que deseja ficar rico rápido. Ela é uma garota Ainu que conhece o território. Será que eles conseguirão sobreviver e encontrar o tesouro perdido?
+                      </div>
+                    </div>
+                    <div class="info2 mt-5">
+                      <div class="mudo cursor-context mb-2">
+                        Elenco:
+                        <a href="#">Kento Yamazaki,</a>
+                        <a href="#">Anna Yamada,</a>
+                        <a href="#">Gordon Maeda,</a>
+                        <a href="#">mais</a>
+                      </div>
+                      <div class="mudo cursor-context mb-2">
+                        Gêneros:
+                        <a href="#">Japoneses,</a>
+                        <a href="#">Épicos,</a>
+                        <a href="#">Dramas</a>
+                      </div>
+                      <div class="mudo cursor-context mb-2">
+                        Cenas e momentos:
+                        <a href="#">Empolgantes</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- INFORMAÇÕES FINAIS SOBRE O FILME/SERIE-->
+                  <div class="info-sobre">
+                    <div class="sobre">
+                      <h2 class="mb-4 cursor-context">Sobre Golden Kamuy</h2>
+                      <div class="mudo cursor-context mb-2">
+                        Direção:
+                        <a href="#">Shigeaki Kubo</a>
+                      </div>
+                      <div class="mudo cursor-context mb-2">
+                        Elenco:
+                        <a href="#">Kento Yamazaki,</a>
+                        <a href="#">Anna Yamada,</a>
+                        <a href="#">Gordon Maeda,</a>
+                        <a href="#">Asuka Kudo,</a>
+                        <a href="#">Shuntaro Yanagi,</a>
+                        <a href="#">Yuki Izumisawa,</a>
+                        <a href="#">Yuma Yamoto</a>
+                        <a href="#">Ryohei Otani,</a>
+                        <a href="#">Katsuya,</a>
+                        <a href="#">Mitsuki Takahata,</a>
+                        <a href="#">Katsumi Kiba,</a>
+                        <a href="#">Hisako Okata,</a>
+                        <a href="#">Debo Akibe,</a>
+                        <a href="#">Makita Sports,</a>
+                        <a href="#">Hiroshi Tamaki,</a>
+                        <a href="#">Hiroshi Tachi</a>
+                      </div>
+                      <div class="mudo cursor-context mb-2">
+                        Roteiro:
+                        <a href="#">Tsutomu Kuroiwa</a>
+                      </div>
+                      <div class="mudo cursor-context mb-2">
+                        Gênero:
+                        <a href="#">Japoneses,</a>
+                        <a href="#">Épicos,</a>
+                        <a href="#">Dramas</a>
+                        <a href="#">Obras de época,</a>
+                        <a href="#">Filmes de ação</a>
+                        <a href="#">e aventura</a>
+                      </div>
+                      <div class="mudo cursor-context mb-2">
+                        Cenas e momentos:
+                        <a href="#">Empolgantes</a>
+                      </div>
+                      <div class="mudo d-flex">
+                        Classificação etária
+                        <a class="ms-3" href="#">
+                          <div class="maturity-desc">
+                            <img src="image/img-sliders/banner-top/number-16.png" alt="maturity">
+                            violência
+                          </div>
+                        </a>
+                      </div>
+                      <div class="d-flex justify-content-end fw-normal cursor-context">
+                        Não recomendado para menores de 16 anos
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+        <!-- LADO DIREITO DA IMG TOP-->
+        <div class="div2-top d-flex justify-content-end align-items-end">
+          <span class="maturity d-flex">
+            <img src="image/img-sliders/banner-top/number-16.png" alt="Idade necessaria 16 anos">
+          </span>
+        </div>
+      </div>
+      <!-- SLIDERS DA BOOTFLIX -->
+      <div class="body-sliders pb-5">
+        <div class="title-carousel d-flex">
+          <h2 class="me-3 cursor-context">Descubra suas próximas histórias</h2>
+          <span class="cursor">
+            Ver tudo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+            </svg>
+          </span>
+        </div>
+        <div class="slider-container">
+          <button class="prev-slide btn btn-dark">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <div class="slider">
+              <ul class="slider-items">
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (2).jpeg" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download.jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime.png" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/assistir-novamente/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (1).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (3).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/populares-na-bootflix/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime1.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime2.png" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime3.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item end-page">
+                    <img src="image/animes-de-ficçao-cientifica/anime4.png" alt="Imagem 2">
+                  </li>
+              </ul>
+          </div>
+          <button class="next-slide btn btn-dark">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <!-- SLIDERS DA BOOTFLIX -->
+        <div class="title-carousel d-flex">
+          <h2 class="me-3 cursor-context">Continue assistindo como ERNANI</h2>
+          <span class="cursor">
+            Ver tudo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+            </svg>
+          </span>
+        </div>
+        <div class="slider-container">
+          <button class="prev-slide btn btn-dark">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <div class="slider">
+              <ul class="slider-items">
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (2).jpeg" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download.jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime.png" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/assistir-novamente/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (1).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (3).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/populares-na-bootflix/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime1.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime2.png" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime3.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item end-page">
+                    <img src="image/animes-de-ficçao-cientifica/anime4.png" alt="Imagem 2">
+                  </li>
+              </ul>
+          </div>
+          <button class="next-slide btn btn-dark">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <!-- SLIDERS DA BOOTFLIX -->
+        <div class="title-carousel d-flex">
+          <h2 class="me-3 cursor-context">Minha lista</h2>
+          <span class="cursor">
+            Ver tudo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+            </svg>
+          </span>
+        </div>
+        <div class="slider-container">
+          <button class="prev-slide btn btn-dark">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <div class="slider">
+              <ul class="slider-items">
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (2).jpeg" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download.jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime.png" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/assistir-novamente/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (1).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (3).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/populares-na-bootflix/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime1.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime2.png" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime3.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item end-page">
+                    <img src="image/animes-de-ficçao-cientifica/anime4.png" alt="Imagem 2">
+                  </li>
+              </ul>
+          </div>
+          <button class="next-slide btn btn-dark">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <!-- SLIDERS DA BOOTFLIX -->
+        <div class="title-carousel d-flex">
+          <h2 class="me-3 cursor-context">Por que você viu Demon Slayer</h2>
+          <span class="cursor">
+            Ver tudo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+            </svg>
+          </span>
+        </div>
+        <div class="slider-container">
+          <button class="prev-slide btn btn-dark">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <div class="slider">
+              <ul class="slider-items">
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (2).jpeg" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download.jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime.png" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/assistir-novamente/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (1).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (3).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/populares-na-bootflix/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime1.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime2.png" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime3.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item end-page">
+                    <img src="image/animes-de-ficçao-cientifica/anime4.png" alt="Imagem 2">
+                  </li>
+              </ul>
+          </div>
+          <button class="next-slide btn btn-dark">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <!-- SLIDERS DA BOOTFLIX -->
+        <div class="title-carousel d-flex">
+          <h2 class="me-3 cursor-context">Novidades na Bootflix</h2>
+          <span class="cursor">
+            Ver tudo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+            </svg>
+          </span>
+        </div>
+        <div class="slider-container">
+          <button class="prev-slide btn btn-dark">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <div class="slider">
+              <ul class="slider-items">
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (2).jpeg" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download.jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime.png" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/assistir-novamente/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (1).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (3).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/populares-na-bootflix/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime1.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime2.png" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime3.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item end-page">
+                    <img src="image/animes-de-ficçao-cientifica/anime4.png" alt="Imagem 2">
+                  </li>
+              </ul>
+          </div>
+          <button class="next-slide btn btn-dark">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <!-- SLIDERS DA BOOTFLIX -->
+        <div class="title-carousel d-flex">
+          <h2 class="me-3 cursor-context">Principais buscas</h2>
+          <span class="cursor">
+            Ver tudo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+            </svg>
+          </span>
+        </div>
+        <div class="slider-container">
+          <button class="prev-slide btn btn-dark">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <div class="slider">
+              <ul class="slider-items">
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (2).jpeg" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download.jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime.png" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/assistir-novamente/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (1).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (3).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/populares-na-bootflix/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime1.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime2.png" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime3.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item end-page">
+                    <img src="image/animes-de-ficçao-cientifica/anime4.png" alt="Imagem 2">
+                  </li>
+              </ul>
+          </div>
+          <button class="next-slide btn btn-dark">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <!-- SLIDERS DA BOOTFLIX -->
+        <div class="title-carousel d-flex">
+          <h2 class="me-3 cursor-context">Dramas</h2>
+          <span class="cursor">
+            Ver tudo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+            </svg>
+          </span>
+        </div>
+        <div class="slider-container">
+          <button class="prev-slide btn btn-dark">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <div class="slider">
+              <ul class="slider-items">
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (2).jpeg" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download.jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime.png" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/assistir-novamente/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (1).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (3).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/populares-na-bootflix/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime1.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime2.png" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime3.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item end-page">
+                    <img src="image/animes-de-ficçao-cientifica/anime4.png" alt="Imagem 2">
+                  </li>
+              </ul>
+          </div>
+          <button class="next-slide btn btn-dark">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <!-- SLIDERS DA BOOTFLIX -->
+        <div class="title-carousel d-flex">
+          <h2 class="me-3 cursor-context">Assistir novamente</h2>
+          <span class="cursor">
+            Ver tudo
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+            </svg>
+          </span>
+        </div>
+        <div class="slider-container">
+          <button class="prev-slide btn btn-dark">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <div class="slider">
+              <ul class="slider-items">
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (2).jpeg" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download (3).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animacao/download.jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime.png" alt="Imagem 3">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/assistir-novamente/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (1).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (2).jpeg" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/em-alta/download (3).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/populares-na-bootflix/download (6).jpeg" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime1.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime2.png" alt="Imagem 1">
+                  </li>
+                  <li class="slider-item">
+                    <img src="image/animes-de-ficçao-cientifica/anime3.png" alt="Imagem 2">
+                  </li>
+                  <li class="slider-item end-page">
+                    <img src="image/animes-de-ficçao-cientifica/anime4.png" alt="Imagem 2">
+                  </li>
+              </ul>
+          </div>
+          <button class="next-slide btn btn-dark">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER DO SITE-->
+    <footer>
+      <!-- Div do Footer -->
+      <div class="container-fluid">
+        <!-- Links sociais -->
+        <div class="container-fluid d-flex">
+          <!-- Icon social Facebook -->
+          <a href="#" class="me-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook social-link" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </a>
+          <!-- Icon social Instagram -->
+          <a href="#" class="me-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram social-link" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+          </a>
+          <!-- Icon social Twitter -->
+          <a href="#" class="me-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter social-link" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+            </svg>
+          </a>
+          <!-- Icon social Youtube-->
+          <a href="#" class="me-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube social-link" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+            </svg>
+          </a>
+        </div>
+        <!-- Links -->
+        <div class="div-links-footer">
+          <ul class="row container-fluid">
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Audiodescrição</a></li>
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Central de Ajuda</a></li>
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Cartão pré-pago</a></li>
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Imprensa</a></li>
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Relações com investidores</a></li>
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Carreiras</a></li>
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Termos de Uso</a></li>
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Privacidade</a></li>
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Avisos legais</a></li>
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Preferências de cookies</a></li>
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Informações corporativas</a></li>
+            <li class="col-6 col-md-4"><a class="links-footer" href="#">Entre em contato</a></li>
+          </ul>
+        </div>
+        <!-- Botao Código de Serviço -->
+        <div class="container-fluid row">
+          <button id="botaocd">Código do serviço</button>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="container-fluid div-copy cursor-context">
+        <span class="copy">© 2024 - 6/13/2024 BootFlix, Inc. Desenvolvido por <a href="https://github.com/matheusprat" target="_blank">Matheus P.</a></span>
+      </div>
+    </footer>
+    <!-- Div de carregamento -->
+    <div class="loading-overlay cursor-context" id="loadingOverlay">
+      <div class="d-flex justify-content-center align-items-center rotating-border">
+        <img src="image/perfil2.png" alt="Loading">
+      </div>
+    </div>
+    <!-- JS DO BOOTSTRAP E DO SITE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="jsdesktop/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const sliders = document.querySelectorAll(".slider-container");
+  
+          sliders.forEach((sliderContainer) => {
+              const prevBtn = sliderContainer.querySelector(".prev-slide");
+              const nextBtn = sliderContainer.querySelector(".next-slide");
+              const slider = sliderContainer.querySelector(".slider");
+              const sliderItems = sliderContainer.querySelectorAll(".slider-item");
+  
+              let currentIndex = 0;
+              let slidesPerPage = getSlidesPerPage();
+              const totalSlides = sliderItems.length;
+              let totalPages = Math.ceil(totalSlides / slidesPerPage);
+  
+              window.addEventListener('resize', () => {
+                  slidesPerPage = getSlidesPerPage();
+                  totalPages = Math.ceil(totalSlides / slidesPerPage);
+                  slideTo(currentIndex, slider, sliderItems, slidesPerPage); // Adjust the position based on new settings
+              });
+  
+              updateButtonState();
+  
+              nextBtn.addEventListener("click", function () {
+                  if (currentIndex < totalPages - 1) {
+                      currentIndex++;
+                      slideTo(currentIndex, slider, sliderItems, slidesPerPage);
+                  }
+              });
+  
+              prevBtn.addEventListener("click", function () {
+                  if (currentIndex > 0) {
+                      currentIndex--;
+                      slideTo(currentIndex, slider, sliderItems, slidesPerPage);
+                  }
+              });
+  
+              function getSlidesPerPage() {
+                  if (window.innerWidth >= 992) {
+                      return 5;
+                  } else {
+                      return 3;
+                  }
+              }
+  
+              function slideTo(index, slider, sliderItems, slidesPerPage) {
+                  const slideWidth = sliderItems[0].offsetWidth;
+                  const translateValue = -index * slideWidth * slidesPerPage;
+                  slider.style.transform = `translateX(${translateValue}px)`;
+                  updateButtonState();
+              }
+  
+              function updateButtonState() {
+                  prevBtn.style.display = currentIndex === 0 ? "none" : "block";
+                  nextBtn.style.display = currentIndex === totalPages - 1 ? "none" : "block";
+              }
+          });
+      });
+    </script>
+  </body>
+</html>

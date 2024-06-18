@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 576px) {
+    .navbar-scroll {
+        width: 97%;
+    }
+
+    .title-carousel > h2 {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    i {
+        font-size: 1.5vw;
+      }
+}
+
+@media screen and (min-width: 992px) {
+    /* CONFIGURAÇÕES DO HEADER / CABEÇALHO ==============================================================*/
+    .logo {
+        font-size: 1.8em !important;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .nav-bar {
+        font-size: 1vw;
+        height: 34px;
+    }
+
+    .icon-search {
+        top: 28px;
+        right: 150px;
+    }
+
+    .bar-search {
+        top: 26px;
+        right: 150px;
+    }
+
+    .btn-noti {
+        top: 28px;
+        right: 105px;
+    }    
+
+    .arrow-noti {
+        top: 60px;
+        right: 108px;
+    }
+
+    .noti-list {
+        top: 90px;
+        right: 108px;
+    }
+
+    .btn-perfil {
+        top: 28px;
+        right: 30px;
+        margin-right: 27px;
+    }
+
+    .perfil-arrow {
+        top: 60px;
+        right: 65px;
+    }
+
+    .perfil-list {
+        top: 90px;
+        right: 56px;
+    }
+
+    .navbar-scroll {
+        position: fixed;
+        top: 10px;
+        left: 8px;
+
+        width: 98%;
+        height: 68px;
+    }
+
+    /* CONFIGURAÇÕES DA IMG TOP ==============================================================*/
+    
+    .div1-top {
+        padding-left: 35px;
+    }
+
+    .div1-top > img {
+        margin-top: 110px;
+    }
+
+    .div1-top > div {
+        font-size: 1.8vw;
+    }
+
+    .synopsis {
+        font-size: 1.2vw !important;
+    }
+
+    .icon-play {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    .icon-info {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    .play {
+        font-size: 1.3vw;
+    }
+
+    .button-info-top {
+        font-size: 1.2vw;
+    }
+
+    .button-info-top > svg {
+        width: 2vw !important;
+        height: 2vw !important;
+    }
+
+    /* CONFIGURAÇÕES DA INFORMAÇÕES SOBRE FILME/SERIE ==============================================================*/
+
+    .div-info {
+        width: 850px;
+        height: 90%;
+        background-color: #181818;
+        border-radius: 8px;
+        transition-duration: .6s;
+    }
+
+    .amostra {
+        width: 100%;
+        height: 450px;
+    }
+
+    .icon-info {
+        width: 13px !important;
+        height: 13px !important;
+        background-image: url('../image/img-sliders/banner-top/volume.png');
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .adicionar {
+        width:50px;
+        height: 50px;
+    }
+
+    .adicionar > svg {
+        width:22px;
+        height: 22px;
+    }
+
+    .like {
+        width:50px;
+        height: 50px;
+    }
+
+    .icon-like {
+        width: 20px;
+        height: 20px;
+    }
+
+    .play-info {
+        font-size: 90%;
+        font-weight: bolder;
+    }
+
+    /* CONFIGURAÇÕES DOS SLIDERS  =======================================================*/
+
+    .slider-item {
+        flex: 0 0 19%; /* 5 images per view */
+        max-width: 25%;
+    }
+
+    .title-carousel > h2 {
+        font-size: 1.3vw;
+    }
+
+    .img-top {
+        width: 100%;
+        height: 43vw;
+    }
+
+    i {
+        font-size: 1vw;
+      }
+
+}
